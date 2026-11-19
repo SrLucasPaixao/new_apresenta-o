@@ -5,16 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Carros Elétricos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1px;
+        }
+        h1 {
+            margin-top: 30px;
+            padding-left: 3px;
+        }
+        form {
+            padding: 3px;
+          }
+        label {
+            margin-bottom: 0px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 27%;
+            padding: 2px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Carros Elétricos</h1>
 
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="nomec">Nome completo</label> <input type="text" name="nome" id="nomec"></p>
-        <p><label for="modelu">Modelo de carro favorito</label> <input type="text" name="model" id="modelu"></p>
-        <p><label for="senhau">Senha</label> <input type="password" name="senha" id="senhau"></p>
-        <p><input type="submit" value="Enviar"></p>
-        <p><input type="reset" value="Limpar"></p>
+    <form action="cadastro1.php" method="post" autocomplete="off">
+        <p><label for="nomec">Nome completo</label></p> 
+        <p><input type="text" name="nome" id="nomec" placeholder="Digite seu nome completo"></p>
+        <p><label for="modelu">Modelo de carro favorito</label></p>
+        <p><input type="text" name="model" id="modelu" placeholder="Ex Tesla Model 3"></p>
+        <p><label for="senhau">Crie uma senha de acesso</label></p> 
+        <p><input type="password" name="senha" id="senhau" placeholder="Mínimo 6 caracteres"></p>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+        
     </form>
     
 </body>

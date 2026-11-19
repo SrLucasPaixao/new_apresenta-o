@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Carros Elétricos</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="atv2-1.css">
 </head>
-<body>
-    <h1>Carros Elétricos</h1>
+<body style="background-color: #4a88da;">
+    
 
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="nomec">Nome completo</label> <input type="text" name="nome" id="nomec"></p>
-        <p><label for="emailu">Email</label> <input type="text" name="email" id="emailu"></p>
-        <p><label for="senhau">Senha</label> <input type="text" name="senha" id="senhau"></p>
-        <p><input type="submit" value="Enviar"><input type="reset" value="Limpar"></p>
+    <form action="cadastro2.php" method="post" autocomplete="off">
+        <h1>Cadastro</h1>
+        <p><label for="nomec">Nome completo</label> <textarea type="text" name="nome" id="nomec" type="text" name="nome" required></textarea></p>
+
+        <p><label for="emailu">Email</label> <textarea type="text" name="email" id="emailu" type="email" name="email" required type="email" name="email" pattern=".+@.+\.com(\.br)?" title="Digite um email válido"></textarea></p>
+
+        <p><label for="senhau">Senha</label> <textarea ty pe="text" name="senha" id="senhau" name="senha" type="password" name="senha" required type="password" name="senha" minlength="8" required></textarea></p>
+
+        <p><input type="submit" value="Cadastrar"></p>
+        <p style="text-align: center;">Já tem uma conta? <a href="login.html">Entrar</a></p>
     </form>
 
 </body>
