@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Concluído</title>
-</head>
-<body>
-  <link rel="stylesheet" href="atv2.css">
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Concluído</title>
-    <link rel="stylesheet" href="atv2.css">
+    <link rel="stylesheet" href="atv2-1.css">
 </head>
 <body style="background-color: #4a88da;">
 
