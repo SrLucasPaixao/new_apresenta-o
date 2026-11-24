@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Parceira - New Era Engenharia</title>
+    <style>
+        :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+            --success: #18794e;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--page);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--navy);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            height: 45px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .banner-cupom {
+            background-color: var(--blue-soft);
+            border: 1px dashed var(--blue);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .grade {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .selo {
+            background-color: var(--success);
+            color: white;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .preco {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--navy);
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: var(--blue);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--navy-deep);
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo New Era">
+        <nav>
+            <a href="painel.html">Início</a>
+            <a href="vagas.html">Banco de Talentos</a>
+            <a href="loja.html">Loja Parceira</a>
+            <a href="cursos.html">Cursos EAD</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color: var(--navy);">Comércio Facilitado — Parceiros Homologados</h1>
+        <p>Materiais de construção e engenharia com condições exclusivas para colaboradores e parceiros New Era.</p>
+
+        <!-- Área de Cupom -->
+        <div class="banner-cupom">
+            <div>
+                <strong>Tem um cupom de parceiro?</strong> Use o código <code>NEWERA10</code> para ganhar 10% de desconto.
+            </div>
+            <div>
+                <input type="text" id="cupom" placeholder="Digite o cupom">
+                <button type="button" style="width: auto;" onclick="alert('Cupom aplicado! Desconto ativado no carrinho.')">Aplicar</button>
+            </div>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <div class="grade">
+            <div class="produto">
+                <span class="selo">Parceiro Homologado</span>
+                <h3>Cimento Estrutural CP-V (50kg)</h3>
+                <p>Alta resistência inicial para obras de grande porte.</p>
+                <div class="preco">R$ 34,90</div>
+                <button onclick="alert('Produto adicionado ao pedido!')">Comprar Material</button>
+            </div>
+
+            <div class="produto">
+                <span class="selo">Parceiro Homologado</span>
+                <h3>Kit EPI Completo Engenharia</h3>
+                <p>Capacete, óculos de proteção, luvas e botina certificada.</p>
+                <div class="preco">R$ 189,00</div>
+                <button onclick="alert('Produto adicionado ao pedido!')">Comprar Material</button>
+            </div>
+
+            <div class="produto">
+                <span class="selo">Parceiro Homologado</span>
+                <h3>Trena a Laser Digital 50m</h3>
+                <p>Medição rápida e precisa para vistorias e projetos.</p>
+                <div class="preco">R$ 245,00</div>
+                <button onclick="alert('Produto adicionado ao pedido!')">Comprar Material</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

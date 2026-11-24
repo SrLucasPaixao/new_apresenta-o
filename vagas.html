@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Talentos - New Era Engenharia</title>
+    <style>
+        :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--page);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--navy);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            height: 45px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .caixa {
+            background-color: var(--surface);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+            margin-bottom: 25px;
+        }
+
+        h1, h2 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        .vaga-item {
+            border-bottom: 1px solid var(--line);
+            padding: 12px 0;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background-color: var(--page);
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: var(--blue);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--navy-deep);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo New Era">
+        <nav>
+            <a href="painel.html">Início</a>
+            <a href="vagas.html">Banco de Talentos</a>
+            <a href="loja.html">Loja Parceira</a>
+            <a href="cursos.html">Cursos EAD</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="caixa">
+            <h1>Banco de Talentos - Trabalhe Conosco</h1>
+            <p>Confira nossas vagas internas abertas para obras e escritórios:</p>
+
+            <div class="vaga-item"><strong>Engenheiro(a) Chefe de Obra</strong> — Regime CLT | Experiência em grandes estruturas</div>
+            <div class="vaga-item"><strong>Arquiteto(a) Urbanista</strong> — Regime CLT | Projetos sustentáveis e BIM</div>
+            <div class="vaga-item"><strong>Eletricista Predial e Industrial</strong> — Regime CLT | Certificação NR-10</div>
+            <div class="vaga-item"><strong>Mestre de Obras / Construtor</strong> — Regime CLT | Gestão de equipe em canteiro</div>
+            <div class="vaga-item"><strong>Ajudante Geral de Obras</strong> — Regime CLT | Não exige experiência prévia</div>
+            <div class="vaga-item"><strong>Estagiário(a) de Engenharia Civil</strong> — Bolsa Auxílio | Cursando a partir do 5º semestre</div>
+        </section>
+
+        <!-- Formulário de Candidatura -->
+        <section class="caixa">
+            <h2>Candidatar-se a uma Vaga</h2>
+            <form action="#" onsubmit="alert('Candidatura enviada com sucesso para o RH da New Era!'); return false;">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail para Contato</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="cargo">Cargo Pretendido</label>
+                <select id="cargo" required>
+                    <option value="">Selecione um cargo...</option>
+                    <option>Engenheiro(a) Chefe</option>
+                    <option>Arquiteto(a)</option>
+                    <option>Eletricista</option>
+                    <option>Construtor / Mestre de Obras</option>
+                    <option>Ajudante de Obras</option>
+                    <option>Estagiário(a)</option>
+                </select>
+
+                <label for="curriculo">Anexar Currículo (PDF)</label>
+                <input type="file" id="curriculo" accept=".pdf">
+
+                <button type="submit">Enviar Candidatura</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

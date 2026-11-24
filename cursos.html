@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacite-se junto a NEW ERA</title>
+    <style>
+        :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--page);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--navy);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            height: 45px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .grade {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .curso {
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .tag {
+            background-color: var(--blue-soft);
+            color: var(--blue);
+            font-weight: bold;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            color: var(--navy);
+        }
+
+        button {
+            background-color: var(--blue);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--navy-deep);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo New Era">
+        <nav>
+            <a href="painel.html">Início</a>
+            <a href="vagas.html">Banco de Talentos</a>
+            <a href="loja.html">Loja Parceira</a>
+            <a href="cursos.html">Cursos EAD</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color: var(--navy);">Universidade Corporativa New Era (EAD)</h1>
+        <p>Capacitação gratuita e certificada para impulsionar carreiras na engenharia, gestão e tecnologia.</p>
+
+        <div class="grade">
+            <div class="curso">
+                <span class="tag">Gestão & Engenharia</span>
+                <h3>Administração de Obras</h3>
+                <p>Planejamento de cronogramas, controle de custos e gestão de equipes no canteiro.</p>
+                <p><strong>Carga horária:</strong> 40h | 100% Online</p>
+                <button onclick="alert('Matrícula realizada! O curso já está disponível no seu portal.')">Inscrever-se Agora</button>
+            </div>
+
+            <div class="curso">
+                <span class="tag">Sustentabilidade</span>
+                <h3>Responsabilidade Ambiental</h3>
+                <p>Gestão de resíduos da construção civil, licenciamento e obras sustentáveis.</p>
+                <p><strong>Carga horária:</strong> 30h | 100% Online</p>
+                <button onclick="alert('Matrícula realizada! O curso já está disponível no seu portal.')">Inscrever-se Agora</button>
+            </div>
+
+            <div class="curso">
+                <span class="tag">Tecnologia</span>
+                <h3>Inteligência Artificial Aplicada</h3>
+                <p>Como usar IA para automatizar orçamentos, relatórios e produtividade empresarial.</p>
+                <p><strong>Carga horária:</strong> 25h | 100% Online</p>
+                <button onclick="alert('Matrícula realizada! O curso já está disponível no seu portal.')">Inscrever-se Agora</button>
+            </div>
+
+            <div class="curso">
+                <span class="tag">Segurança Digital</span>
+                <h3>Cibersegurança Corporativa</h3>
+                <p>Proteção de dados, projetos sigilosos e boas práticas contra ataques digitais.</p>
+                <p><strong>Carga horária:</strong> 20h | 100% Online</p>
+                <button onclick="alert('Matrícula realizada! O curso já está disponível no seu portal.')">Inscrever-se Agora</button>
+            </div>
+
+            <div class="curso">
+                <span class="tag">Negócios</span>
+                <h3>Administração e Liderança</h3>
+                <p>Fundamentos de gestão financeira, processos e liderança de equipes multidisciplinares.</p>
+                <p><strong>Carga horária:</strong> 35h | 100% Online</p>
+                <button onclick="alert('Matrícula realizada! O curso já está disponível no seu portal.')">Inscrever-se Agora</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
