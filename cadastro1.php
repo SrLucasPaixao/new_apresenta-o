@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="theme-color" content="#102e50">
+  <title>Cadastro | New Era Engenharia</title>
 </head>
 <body>
+    <style>
+
+    </style>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = htmlspecialchars($_POST['nome']);

@@ -1,55 +1,85 @@
 style
-body {
-    background-color: #3b81dc;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5px;
-    text-align: center;
-}
-h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 25px;
-} 
-form {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-    width: 500px;
-    height: 500px;
-}
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-input[type="submit"] {
-    background-color: #2f8ccb;
-    color: white;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    height: 40px;
-    width: 100%; 
+:root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --muted: #718096;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+            --shadow: 0 22px 65px rgba(16, 46, 80, .12);
+        }
 
-}
-input[type="text"] {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-  textarea {
-    width: 95%;
-    padding: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--navy); /* Fundo azul marinho da sua paleta */
+            color: var(--ink);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* 3. Caixa branca do formulário */
+        form {
+            background-color: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--ink);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--line);
+            background-color: var(--page);
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            outline: none;
+            border-color: var(--blue);
+            background-color: var(--blue-soft);
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--blue);
+            color: var(--surface);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--navy-deep);
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+  style

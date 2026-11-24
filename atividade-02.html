@@ -1,25 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastre-se no Portal New Era</title>
     <link rel="stylesheet" href="atv2-1.css">
 </head>
-<body style="background-color: #4a88da;">
+<body style="background-image: url('Logo NEW ERA Engenharia em Azul Metálico.png')"
+>
+    <style>
+        :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --muted: #718096;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+            --shadow: 0 22px 65px rgba(16, 46, 80, .12);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--navy);
+            color: var(--ink);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: var(--navy);
+    background-image: url('Logo New Era Engenharia em Azul Metálico'); 
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+        form {
+            background-color: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 360px;
+            height: auto;
+            box-sizing: border-box;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--navy);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--ink);
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--line);
+            background-color: var(--page);
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--blue);
+            background-color: var(--blue-soft);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--blue);
+            color: var(--surface);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--navy-deep);
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
     
 
     <form action="cadastro2.php" method="post" autocomplete="off">
-        <h1>Cadastro</h1>
-        <p><label for="nomec">Nome completo</label> <textarea type="text" name="nome" id="nomec" type="text" name="nome" required></textarea></p>
+         <div style="text-align: center; margin-bottom: 15px;">
+        <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo Portal New Era" style="max-width: 150px; height: auto;">
+         </div>
+        <h1>Cadastre-se</h1>
+        <p><label for="nomec">Nome completo</label> <input type="text" name="nome" id="nomec" type="text" name="nome" placeholder="Didite seu nome completo"required></input></p>
 
-        <p><label for="emailu">Email</label> <textarea type="text" name="email" id="emailu" type="email" name="email" required type="email" name="email" pattern=".+@.+\.com(\.br)?" title="Digite um email válido"></textarea></p>
+        <p><label for="emailu">Seu melhor Email</label> <input type="text" name="email" id="emailu" type="email" name="email" placeholder="Exemplo@gmail.com" required type="email" name="email" pattern=".+@.+\.com(\.br)?" title="Digite um email válido"></iinput></p>
 
-        <p><label for="senhau">Senha</label> <textarea ty pe="text" name="senha" id="senhau" name="senha" type="password" name="senha" required type="password" name="senha" minlength="8" required></textarea></p>
+        <p><label for="senhau">Crie sua Senha</label> <input ty pe="text" name="senha" id="senhau" name="senha" type="password" name="senha" placeholder="senh@123exemplo"required type="password" name="senha" minlength="8" required></input></p>
 
         <p><input type="submit" value="Cadastrar"></p>
-        <p style="text-align: center;">Já tem uma conta? <a href="login.html">Entrar</a></p>
+        <p style="text-align: center;">Já faz parte da New Era? <a href="login.html">Entrar</a></p>
     </form>
 
 </body>

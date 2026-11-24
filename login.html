@@ -1,19 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrar</title>
-  <link rel="stylesheet" href="atv2-1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal New Era</title>
+    <link rel="stylesheet" href="atv2-1.css">
 </head>
-<body style="background-color: #4a88da;">
-  <form action="entrar.php" method="post" autocomplete="off">
-        <h1>Entrar</h1>
-        <p><label for="emailu">Email</label> <textarea type="text" name="email" id="emailu" type="email" name="email" required type="email" name="email" pattern=".+@.+\.com(\.br)?" title="Digite um email válido"></textarea></p>
+<body style="background-color: #7ea1cf;">
+  <style>
+     :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --muted: #718096;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+            --shadow: 0 22px 65px rgba(16, 46, 80, .12);
+        }
 
-        <p><label for="senhau">Senha</label> <textarea type="text" name="senha" id="senhau" type="password" name="senha" required type="password" name="senha" minlength="8" required></textarea></p>
-        <p><input type="submit" value="Entrar"></p>
-        <p style="text-align: center;">Não tem uma conta? <a href="atividade-02.html">Cadastrar</a></p>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--navy); /* Fundo azul marinho da sua paleta */
+            color: var(--ink);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* 3. Caixa branca do formulário */
+        form {
+            background-color: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--ink);
+        }
+
+        /* 4. Campos de digitação */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--line);
+            background-color: var(--page);
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        /* Destaque azul suave quando clica no campo */
+        input:focus {
+            outline: none;
+            border-color: var(--blue);
+            background-color: var(--blue-soft);
+        }
+
+        /* 5. Botão Entrar */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--blue);
+            color: var(--surface);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--navy-deep);
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+  </style>
+
+    <form action="entrar.php" method="post" autocomplete="off">
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo Portal New Era" style="max-width: 150px; height: auto;">
+        </div>
+
+        <h1>Entrar</h1>
+
+        <p>
+            <label for="nomeu">Nome</label>
+            <input type="text" name="nome" id="nomeu" placeholder="Digite seu nome completo" required>
+        </p>
+
+        <p>
+            <label for="emailu">Email</label>
+            <input type="email" name="email" id="emailu" pattern=".+@.+\.com(\.br)?" title="Digite um email válido" placeholder="exemploemail@gmail.com"required>
+        </p>
+
+        <p>
+            <label for="senhau">Senha</label>
+            <input type="password" name="senha" id="senhau" minlength="8" placeholder="senh@123exemplo"required>
+        </p>
+
+        <p>
+            <input type="submit" value="Entrar">
+        </p>
+
+        <p style="text-align: center;">
+            Não tem uma conta? <a href="atividade-02.html">Cadastrar</a>
+        </p>
     </form>
+
 </body>
 </html>

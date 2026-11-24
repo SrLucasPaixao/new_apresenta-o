@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Inicial - New Era Engenharia</title>
+    <style>
+        :root {
+            --navy: #102e50;
+            --navy-deep: #0a2039;
+            --blue: #23639a;
+            --blue-soft: #eaf1f8;
+            --ink: #18283a;
+            --muted: #718096;
+            --line: #dce4ec;
+            --surface: #ffffff;
+            --page: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--page);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        /* Menu Superior */
+        header {
+            background-color: var(--navy);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            height: 45px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .caixa {
+            background-color: var(--surface);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+            margin-bottom: 25px;
+        }
+
+        h1, h2 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        /* Grade de Projetos */
+        .grade {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: var(--blue-soft);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .status {
+            display: inline-block;
+            background-color: var(--blue);
+            color: white;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo da NEW ERA ENGENHARIA.png" alt="Logo New Era">
+        <nav>
+            <a href="painel.html">Início</a>
+            <a href="vagas.html">Banco de Talentos</a>
+            <a href="loja.html">Loja Parceira</a>
+            <a href="cursos.html">Cursos EAD</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- História da Empresa -->
+        <section class="caixa">
+            <h1>Nossa História - New Era Engenharia</h1>
+            <p>
+                Fundada com o propósito de modernizar a construção civil, a <strong>New Era Engenharia</strong> une tecnologia, 
+                sustentabilidade e qualificação profissional. Atuamos desde grandes obras de infraestrutura até o 
+                desenvolvimento de talentos e parcerias estratégicas para o setor.
+            </p>
+        </section>
+
+        <!-- Projetos em Execução -->
+        <section class="caixa">
+            <h2>Projetos e Empreendimentos em Execução</h2>
+            <div class="grade">
+                <div class="card">
+                    <span class="status">Em Andamento - 75%</span>
+                    <h3>Residencial Horizonte Verde</h3>
+                    <p>Complexo habitacional sustentável com energia solar e reuso de água.</p>
+                </div>
+
+                <div class="card">
+                    <span class="status">Em Andamento - 40%</span>
+                    <h3>Centro Logístico Nova Era</h3>
+                    <p>Galpões industriais automatizados com estrutura metálica de alta resistência.</p>
+                </div>
+
+                <div class="card">
+                    <span class="status">Fase Inicial - 15%</span>
+                    <h3>Complexo Empresarial TechTower</h3>
+                    <p>Edifício comercial inteligente com certificação ambiental internacional.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
